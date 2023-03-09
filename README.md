@@ -1,6 +1,19 @@
 # EB-Shop
 
-## EB-Shop is a fully responsive ecommerce website, maximum compatiblities in all mobile devices, built using HTML, CSS, and JavaScript.
+<div align="center">
+  
+  ![GitHub repo size](https://img.shields.io/github/repo-size/jonycmtt/EB-Shop)
+  ![GitHub stars](https://img.shields.io/github/stars/jonycmtt/EB-Shop?style=social)
+  ![GitHub forks](https://img.shields.io/github/forks/jonycmtt/EB-Shop?style=social)
+
+  <br />
+  <br />
+
+  <h2 align="center">EB-Shop Ecommerce - EB-Shop is a fully responsive ecommerce website, maximum compatiblities in all mobile devices, built using HTML, CSS, and JavaScript.</p>
+
+<a href="https://eb-shop.netlify.app/"><strong>➥ Live Demo</strong></a>
+
+</div>
 
 ## <img  alt="gif" src="https://github.com/jonycmtt/jonycmtt/blob/main/wifi-gol.gif?raw=true" width="50" height="50" /> Connect with Me
 
