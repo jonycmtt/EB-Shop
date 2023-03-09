@@ -3,10 +3,10 @@
   --orange: #ff7800;
   --black: #130f40;
   --light-color: #666;
-  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
   --border: 0.2rem solid rgba(0, 0, 0, 0.1);
   --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
-  --outline-hover: 0.2rem solid var(var(--black));
+  --outline-hover: 0.2rem solid var(--black);
 }
 * {
   margin: 0;
@@ -42,6 +42,24 @@ body {
 .btn:hover {
   background: var(--orange);
   color: #fff;
+}
+section {
+  padding: 2rem 9%;
+}
+.heading {
+  text-align: center;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+  font-size: 3.5rem;
+  color: var(--black);
+}
+
+.heading span {
+  background: var(--orange);
+  color: #fff;
+  display: inline-block;
+  padding: 0.5rem 3rem;
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
 }
 .header {
   position: fixed;
@@ -251,7 +269,137 @@ body {
     right: 2rem;
   }
 }
+.home {
+  width: 100%;
+  position: relative;
+  padding-top: 19rem;
+  padding-bottom: 13rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/bg1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  // padding-bottom: 10rem;
+  z-index: 1;
 
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+  }
+  .content {
+    text-align: center;
+    width: 60rem;
+    color: #fff;
+
+    h3 {
+      font-size: 3rem;
+
+      span {
+        color: var(--orange);
+      }
+    }
+    p {
+      font-size: 1.7rem;
+      padding: 1rem 0;
+      list-style: 1.8;
+    }
+    .btn {
+      border-color: var(--orange);
+      color: #fff;
+    }
+  }
+}
+
+.features {
+  padding-bottom: 5rem;
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    .box {
+      padding: 3rem 2rem;
+      background: #fff;
+      outline: var(--outline);
+      outline-offset: -1rem;
+      box-shadow: var(--box-shadow);
+      border-radius: 0.8px;
+      overflow: hidden;
+      text-align: center;
+      img {
+        width: 100%;
+        height: 17rem;
+        margin-bottom: 1rem;
+        object-fit: cover;
+      }
+      &:hover {
+        outline: var(--outline-hover);
+        outline-offset: 0rem;
+      }
+      h3 {
+        font-size: 2.5rem;
+        line-height: 1.8;
+        color: var(--black);
+      }
+      p {
+        font-size: 1.5rem;
+        line-height: 1.8;
+        color: var(--light-color);
+        padding: 1rem 0;
+      }
+    }
+  }
+}
+
+.products {
+  .product-slider {
+    padding: 1rem;
+    &:first-child {
+      margin-bottom: 2rem;
+    }
+    .box {
+      background: #fff;
+      border-radius: 0.5rem;
+      text-align: center;
+      padding: 2rem;
+      outline: var(--outline);
+      outline-offset: -1rem;
+      box-shadow: var(--box-shadow);
+      transition: 0.2s linear;
+      &:hover {
+        outline: var(--outline-hover);
+        outline-offset: 0rem;
+      }
+      img {
+        width: 100%;
+        height: 25rem;
+        object-fit: cover;
+        padding-bottom: 1rem;
+      }
+      h3 {
+        font-size: 2.2rem;
+        color: var(--black);
+      }
+      .price {
+        font-size: 1.6rem;
+        color: var(--light-color);
+        padding: 0.5rem 0;
+      }
+      .stars {
+        font-size: 1.3rem;
+        color: var(--orange);
+        padding: 0.5rem 0;
+      }
+    }
+  }
+}
 // media queries
 
 @media (max-width: 991px) {
@@ -259,6 +407,9 @@ body {
     font-size: 55%;
   }
   .header {
+    padding: 2rem;
+  }
+  section {
     padding: 2rem;
   }
 }
@@ -292,9 +443,29 @@ body {
     }
   }
 }
-
+@media (max-width: 649px) {
+  .products .product-slider .box img {
+    height: 39rem;
+  }
+}
+@media (max-width: 576px) {
+  .features .box-container .box img {
+    height: 37rem;
+  }
+}
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 350px) {
+  .products .product-slider .box img {
+    height: 20rem;
+  }
+  .features .box-container .box img {
+    height: 20rem;
   }
 }
