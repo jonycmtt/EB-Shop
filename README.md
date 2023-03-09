@@ -11,7 +11,7 @@
 
   <h2 align="center">EB-Shop Ecommerce - EB-Shop is a fully responsive ecommerce website, maximum compatiblities in all mobile devices, built using HTML, CSS, and JavaScript.</p>
 
-<a href="https://eb-shop.netlify.app/"><strong>➥ Live Demo</strong></a>
+<a href="https://eb-shop.netlify.app/" target="_blank"><strong>➥ Live Demo</strong></a>
 
 </div>
 
