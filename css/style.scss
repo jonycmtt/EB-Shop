@@ -481,7 +481,7 @@ section {
 
 #blog .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
 
   .box {
@@ -533,6 +533,75 @@ section {
         color: var(--light-color);
         font-size: 1.5rem;
         line-height: 1.5;
+      }
+    }
+  }
+}
+
+#footer {
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+
+    .box {
+      h3 {
+        font-size: 2.5rem;
+        color: var(--black);
+        padding: 1rem 0;
+      }
+      i {
+        color: var(--orange);
+      }
+      .links {
+        display: block;
+        font-size: 1.5rem;
+        color: var(--light-color);
+        padding: 1rem 0;
+        &:hover i {
+          padding-right: 0.8rem;
+        }
+
+        i {
+          color: var(--orange);
+          padding-right: 0.5rem;
+        }
+      }
+      p {
+        line-height: 1.7;
+        font-size: 1.5rem;
+        color: var(--light-color);
+        padding: 1rem 0;
+      }
+      .share a {
+        height: 4rem;
+        width: 4rem;
+        line-height: 4rem;
+        border-radius: 0.5rem;
+        font-size: 2rem;
+        color: var(--black);
+        margin-right: 0.2rem;
+        background: #ccc;
+        // border: var(--border);
+        text-align: center;
+        &:hover {
+          background: var(--orange);
+          color: #fff;
+        }
+      }
+      .email {
+        width: 100%;
+        margin: 0.7rem 0;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background: #ccc;
+        font-size: 1.6rem;
+        color: var(--black);
+        text-transform: none;
+      }
+      .payment-image {
+        margin-top: 2rem;
+        height: 3rem;
       }
     }
   }
