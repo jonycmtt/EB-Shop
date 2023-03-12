@@ -15,8 +15,9 @@
 
 </div>
 
-![EB Desktop Demo](./desktop.png"Desktop Demo")
-![EB Desktop Demo](./theme.png"Desktop Demo")
+<!-- ![EB Desktop Demo](./desktop.png"Desktop Demo") -->
+
+![EB Desktop Demo](./theme.png "Desktop Demo")
 
 ## <img  alt="gif" src="https://github.com/jonycmtt/jonycmtt/blob/main/wifi-gol.gif?raw=true" width="50" height="50" /> Connect with Me
 
