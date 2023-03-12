@@ -478,6 +478,65 @@ section {
     }
   }
 }
+
+#blog .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 1.5rem;
+
+  .box {
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    background: #fff;
+    // &:hover {
+    //   outline: var(--outline-hover);
+    //   outline-offset: 0;
+    // }
+
+    img {
+      width: 100%;
+      height: 25rem;
+      object-fit: cover;
+    }
+    .content {
+      padding: 2rem;
+
+      .icons {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1.5rem;
+        margin-bottom: 1rem;
+        border-bottom: var(--border);
+
+        a {
+          color: var(--light-color);
+          font-size: 1.5rem;
+
+          &:hover {
+            color: var(--black);
+          }
+
+          i {
+            color: var(--orange);
+            padding-right: 0.5rem;
+          }
+        }
+      }
+      h3 {
+        font-size: 1.9rem;
+        color: var(--black);
+        line-height: 1.4;
+        padding: 0.5rem 0;
+      }
+      p {
+        color: var(--light-color);
+        font-size: 1.5rem;
+        line-height: 1.5;
+      }
+    }
+  }
+}
 // media queries
 
 @media (max-width: 991px) {
