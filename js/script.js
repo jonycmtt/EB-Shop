@@ -65,3 +65,31 @@ var swiper = new Swiper(".product-slider", {
       },
     },
   });
+var swiper = new Swiper(".review-slider", {
+    slidesPerView: 1,
+    loop:true,
+    spaceBetween: 20,
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+    // },
+    autoplay : {
+        delay : 3000,
+        disableOnInteration : false,
+    },
+    // centeredSlides : true,
+    breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
+      576: {
+        slidesPerView: 2
+      },
+      650: {
+        slidesPerView: 2,
+      },
+      1020: {
+        slidesPerView: 3
+      },
+    },
+  });
